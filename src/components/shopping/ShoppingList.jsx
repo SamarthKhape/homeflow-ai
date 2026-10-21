@@ -1,0 +1,1 @@
+import ShoppingItem from './ShoppingItem';export default function ShoppingList({items,onToggle,onRemove}){return <div className="space-y-2">{items.map(i=><ShoppingItem key={i.id} item={i} onToggle={onToggle} onRemove={onRemove}/>)}</div>}
